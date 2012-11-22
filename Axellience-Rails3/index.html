@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - The HTML Presentation Framework</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<section>
+				<section>
+					<h2>INTRODUCTION AU FRAMEWORK <span style="color:#D00C33">RAILS 3</span>
+					</h2>
+					<div>
+						<br>
+					</div>
+					<div>
+						<br>
+					</div>
+					<div style="color:#777">Lionel LONKAP TSAMBA</div>
+					<div>
+						<br>
+					</div>
+					<div>
+						<font color="#0099ff">@First_developer</font>
+					</div>
+					<div>
+						<br>
+					</div>
+					<div>
+						
+						<br>
+						<img style="border:none" width="200" src="http://qrfree.kaywa.com/?s=8&amp;d=http%3A%2F%2Fwww.rvl.io%2Ffirstdeveloper%2Fintroduction-to-rails%2F" alt="QRCode">
+					</div>
+
+
+
+				</section>
+				<section>
+					<h2>PlAN</h2>
+					<div>
+						<ul style="line-height:70px">
+							<li>Un peu d'histoire…</li>
+							<li>
+								<b>(¬_¬")</b>&nbsp;<b style="font: inherit;">
+								<b style="color: rgb(208, 12, 51);">Rails 3</b>
+							</b>&nbsp;c'est quoi?
+						</li>
+						<li>Architecture de <b>
+							<span style="color:#D00C33">Rails 3</span>
+						</b>
+					</li>
+					<li>Structure d'une application <b>
+						<span style="color:#D00C33">Rails 3</span>
+					</b>
+				</li>
+				<li>Migrations (BD)</li>
+				<li>Générateurs - Scripts - Utilitaires</li>
+				<li>Gems&nbsp;</li>
+			</ul>
+		</div>
+
+
+
+
+
+
+
+	</section>
+</section>
+<section>
+	<h2>UN PEU D'HIStoire…</h2>
+	<div>
+		<br>
+	</div>
+	<div>
+		<ul style="line-height:80px">
+			<li>Créé par <b>David Heinemeier Hansson</b>
+			</li>
+			<li>
+				<b>15 Octobre 1979</b>
+			</li>
+			<li>
+				Extrait de <b>Basecamp</b> un produit de <b>
+				<span style="color:#D00C33">37</span>signals</b>
+			</li>
+			<li>
+				<span style="color:#D00C33">~&gt;</span> <b>3.2.8</b>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<section>
+	<section>
+		<h2>
+			<br>
+		</h2>
+		<h2>
+			<br>
+		</h2>
+		<h2>
+			(<b>¬_¬""&nbsp;</b>) &nbsp;&nbsp;<span style="color:#D00C33">RAILS</span> c'est quoi?&nbsp;</h2>
+			<div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+		</section>
+		<section>
+			<div>
+				<br>
+			</div>
+			<div>
+				<ul style="line-height:80px">
+					<li>Un framework web écrit en <b>Ruby</b>&nbsp;</li>
+					<li>
+						<b>M.V.C</b>
+					</li>
+					<li>Modulaire - Extensible - Rapide</li>
+					<li>
+						<b>Conventions</b> <b style="color:#D00C33">vs</b> <span style="text-decoration:line-through">
+						<b>Configurations</b>
+					</span>
+				</li>
+				<li>
+					Riche et puissant</li>
+				</ul>
+			</div>
+
+
+
+
+
+		</section>
+	</section>
+	<section>
+		<h2>Architecture de <span style="color:#D00C33">Rails 3</span>
+			<img style="border:none" src="http://i.imgur.com/IufQB.png">
+		</h2>
+
+	</section>
+	<section>
+		<section>
+			<h2>Structure d'une application <span style="color:#D00C33">rails 3</span>
+			</h2>
+			<div>
+				<img style="border:none" width="700" src="http://people.cis.ksu.edu/~hankley/d764/tut08/Kirkconnell_RestfulRuby_files/file.png">
+			</div>
+			<p style="text-align: left;font-size:20px">
+				<b>app</b>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Assets - Mailers etc…</p>
+				<p style="text-align: left;font-size:20px">
+					<b>config</b>: &nbsp; &nbsp;Environments - Initializers - Locales - database.yml - etc…</p>
+					<p style="text-align: left;font-size:20px">
+						<b>db</b>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Migrate - schema.rb - seed.rb…</p>
+
+
+
+
+
+
+
+
+					</section>
+					<section>
+						<h2>CONFIGURATION du <span style="color:#D00C33">DB</span> APDAPTER</h2>
+
+						<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fichier de descriptions des schémas de migration</p>
+						<div style="text-align: left;">
+							<pre>
+								<code class="yaml">
+									<span class="keyword">development:</span>
+									<span class="keyword">adapter:</span>   mysql2
+									<span class="keyword">encoding:</span>  utf8
+									<span class="keyword">host:</span>      localhost
+									<span class="keyword">database:</span>  fd_dev
+									<span class="keyword">username:</span>  admin
+									<span class="keyword">password:</span>  ****
+									<span class="keyword">pool:</span>      5
+									<span class="keyword">timeout:</span>   5000
+
+									<span class="keyword">test: </span>
+									[...]
+									<br>
+									<span class="keyword">production:</span>
+									[...]</code>
+								</pre>
+								<code class="yaml">
+								</code>
+							</div>
+							<code class="yaml">
+
+
+
+							</code>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h2>Migrations (BD) <span style="color:#D00C33">#1</span>
+							</h2>
+							<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fichiers de migrations</p>
+							<div style="text-align: left;">
+								<pre>
+									<code class="ruby"> <span class="class">./db/migrate/</span>   </code>
+								</pre>
+							</div>
+							<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fichier de descriptions des schémas de migration</p>
+							<div style="text-align: left;">
+								<pre>
+									<code class="ruby">ActiveRecord::Schema.define(:version =&gt; 20120730235140) do
+
+										create_table "comments", :force =&gt; true do |t|
+										t.string   "title",            :default =&gt; ""
+										t.text     "body"
+										t.string   "subject",          :default =&gt; ""
+										t.integer  "user_id",          :default =&gt; 0,  :null =&gt; false
+										t.datetime "created_at"
+										t.datetime "updated_at"
+										end
+
+										add_index "comments", ["commentable_id"],&nbsp;</code>
+										<code class="ruby">            :name =&gt; "index_comments_on_commentable_id"</code>
+										<code class="ruby">  add_index "comments", ["user_id"],&nbsp;</code>
+										<code class="ruby">            :name =&gt; "index_comments_on_user_id"</code>
+										<code class="ruby">[...]</code>
+									</pre>
+								</div>
+
+
+
+
+
+
+
+
+
+
+							</section>
+							<section>
+								<h2>Migrations (BD) <span style="color:#D00C33">#2</span>
+								</h2>
+								<div>
+									<br>
+								</div>
+								
+								<div>
+									<p style="font: inherit; text-align: left;">&nbsp; &nbsp; &nbsp; Fichier de migrations</p>
+									<div style=" text-align: left;">
+										<pre "="">
+											<code class="ruby" style="font: inherit;">
+												<span class="class">./db/migrate/</span> <span style="font-family: monospace; font-size: 20px; line-height: 23.75px;">20120730235140_create_comments_table.rb</span>
+											</code>
+										</pre>
+									</div>
+									<p style="font: inherit; text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+									<p style="font: inherit; text-align: left;">&nbsp; &nbsp; &nbsp; Exécution de la migration</p>
+									<pre "="">
+										<code class="ruby" style="font: inherit;">$ rake db:migrate</code>
+									</pre>
+								</div>
+
+
+
+
+							</section>
+						</section>
+						<section>
+							<section>
+								<h2>GENERATEURS - SCRIPTS - UTILITAIRES</h2>
+								<div>
+									<img style="border:none" src="http://i.imgur.com/AGP5p.png">
+									<br>
+								</div>
+							</section>
+							<section>
+								<h3>
+									<span style="color:#D00C33">Generateurs</span> | Model - Controller - CRUD </h3>
+									<div>
+										<br>
+									</div>
+
+									<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Générer un <span style="color:#D00C33">Model</span>
+									</p>
+									<div style="text-align: left;">
+										<pre>
+											<code class="ruby">$ rails generate model NAME [field:type field:type] [options]</code>
+										</pre>
+									</div>
+									<div style="text-align: left;">
+										<br>
+									</div>
+
+									<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Générer un <span style="color:#D00C33">Controller</span>
+									</p>
+									<div style="text-align: left;">
+										<pre>
+											<code class="ruby">$ rails generate controller NAME [action action] [options]</code>
+										</pre>
+									</div>
+
+									<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+									<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Générer une <span style="color:#D00C33">application CRUD</span>
+									</p>
+									<div style="text-align: left;">
+										<pre>
+											<code class="ruby">$ rails generate scaffold NAME [field:type field:type] [options]</code>
+										</pre>
+									</div>
+
+									<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+									<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Lister tous les générateurs</p>
+									<div style="text-align: left;">
+										<pre>
+											<code class="ruby">$ rails generate </code>
+											<code class="ruby">$ rails g</code>
+										</pre>
+									</div>
+
+
+
+								</section>
+							</section>
+							<section>
+								<section>
+									<h2>GEMS</h2>
+									<div>
+										<br>
+									</div>
+									<blockquote>Plugins ou greffons apportant des fonctionnalités supplémentaires à <span style="color:#D00C33">Rails</span>.</blockquote>
+
+									<p>
+										<br>
+									</p>
+									<p>
+										<a href="http://rubygems.org/">http://<b>rubygems</b>.org/</a>
+										<br>
+									</p>
+									<p>
+										or
+									</p>
+									<p>
+										<a href="https://github.com/">https://github.com/<b>&lt;user&gt;</b>/<b>&lt;gem-repo&gt;/</b>
+										</a>
+										<br>
+									</p>
+
+
+
+
+								</section>
+								<section>
+									<h3>
+										<span style="color:#D00C33">BUNDLER</span> | gestionnaire de Gem et DES dependances</h3>
+
+										<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;./Gemfile</p>
+										<div style="text-align: left;">
+											<pre>
+												<code class="ruby">source <span class="string">'http://rubygems.org'</span>
+
+													gem <span class="string">'rails', '3.1.7'</span>
+													gem <span class="string">'jquery-rails'</span>
+
+													# Bundle edge Rails instead:
+													# gem 'rails',     :git =&gt; 'git://github.com/rails/rails.git'
+
+													gem <span class="string">mysql2"</span>
+
+													group <span class="keyword">:assets</span> do
+													gem <span class="string">'sass-rails',   '3.1.4'</span>
+													gem <span class="string">'coffee-rails', '~&gt; 3.1.1'</span>
+													...</code>
+													<code class="ruby">end</code>
+													<code class="ruby">
+														<br>
+													</code>
+													<code class="ruby">group <span class="keyword">:development, :test</span> do</code>
+													<code class="ruby">  gem <span class="string">'ruby_gntp'</span>
+														...
+														end</code>
+													</pre>
+												</div>
+
+
+
+											</section>
+											<section>
+												<h3>
+													<span style="color:#D00C33">BUNDLER</span> | intallation - mise à jours</h3>
+													<div>
+														<br>
+													</div>
+
+													<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Installation des gems et dependances</p>
+													<div style="text-align: left;">
+														<pre>
+															<code class="ruby">$ bundle&nbsp;</code>
+															<code class="ruby">$ bundle install</code>
+														</pre>
+													</div>
+													<br>
+													<p style="text-align: left; font-size: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Mise à jours du <font face="courier new">Gemfile.lock&nbsp;</font>
+													</p>
+													<div style="text-align: left;">
+														<pre>
+															<code class="ruby">$ bundle&nbsp;update</code>
+														</pre>
+													</div>
+
+
+
+
+												</section>
+											</section>
+											
+
+										</div>
+
+										<script src="lib/js/head.min.js"></script>
+										<script src="js/reveal.min.js"></script>
+
+										<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					]
+				});
+
+</script>
+
+</body>
+</html>
