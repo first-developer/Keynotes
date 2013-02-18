@@ -2,7 +2,7 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$social-tags: '#yourhashtag';
+$social-tags: '';
 $brand-small-icon-size: 30px;
 
 $gray-1: #e6e6e6;
@@ -174,8 +174,8 @@ slides > slide {
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
-      background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
-      @include background-size($brand-small-icon-size $brand-small-icon-size);
+      background: url(../../images/fd_logo.png) no-repeat 0 50%;
+      @include background-size(33px $brand-small-icon-size);
       padding-left: $brand-small-icon-size + 10;
       height: $brand-small-icon-size;
       line-height: 1.9;
@@ -860,7 +860,7 @@ article.smaller {
 }
 
 .thank-you-slide {
-  background: $brand-blue !important;
+  background: $gray-4 !important;
   color: white;
 
   h2 {
