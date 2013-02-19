@@ -605,7 +605,7 @@ article.smaller {
   q {
     font-size: 30px;
     line-height: 48px;
-    
+
 
     &:before, &:after {
       font-size: 60px;
@@ -779,8 +779,14 @@ article.smaller {
 }
 
 .vSpace{
+  list-style: none !important; 
   li {
-      line-height:40px;    
+      line-height:40px;   
+      list-style: none !important; 
+
+      &::before {
+        content: '';
+      }
   }
 
 }
