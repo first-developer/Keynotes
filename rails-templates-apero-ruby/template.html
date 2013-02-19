@@ -39,6 +39,26 @@ URL: https://code.google.com/p/io-2012-slides
         <img src="images/rails.jpeg"></div>
   </slide>
 
+
+    <slide>
+    <hgroup>
+      <h2>QR CODE / URL</h2>
+      <h3>Scannez ou allez à l'url indiquée</h3>
+    </hgroup>
+    <article>
+      <div class="flexbox  vleft" style="position:relative;top:150px;">
+        <h2>http://goo.gl/Sha6B</h2>
+      </div>
+      <div class="flexbox  vcenter" style="position:relative;top:150px;">
+        <h3>ou</h3>
+      </div>
+      <div class="flexbox vright" style="position:relative;top:-100px;">
+        <img src="images/keynote_qrcode.png" width="400">
+      </div>
+      
+    </article>
+  </slide>
+
   <slide>
     <hgroup>
       <h2>Qui suis-je?</h2>
@@ -91,10 +111,10 @@ URL: https://code.google.com/p/io-2012-slides
     <hgroup>
       <h2>Les templates dans Rails</h2>
     </hgroup>
-    <article class="flexbox vcenter auto-fadein smaller">
-      <q>
+    <article class="flexbox vcenter auto-fadein ">
+      <p>
         <span class="red3">Templates</span> are a king of <span class="red3">generator</span> used to generate custom application
-      </q>
+      </p>
     </article>
   </slide>
 
@@ -104,7 +124,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h3>./template.rb</h3>
     </hgroup>
     <article>
-      <p>Exemple de template fournir dans la <a href="http://guides.rubyonrails.org/generators.html#application-templates">doc</a> rails</p>
+      <p>Exemple de template fourni dans la <a href="http://guides.rubyonrails.org/generators.html#application-templates">doc</a> rails</p>
       <pre class="prettyprint" data-lang="ruby">
 gem("rspec-rails", :group => "test")
 gem("cucumber-rails", :group => "test")
@@ -192,7 +212,7 @@ gem("&lt;gem_name&gt;",
       <h3>Méthodes de génération</h3>
     </hgroup>
     <article class="smaller">
-      <p><b class="red3">Application</b>: Ajoute une ligne au finhier <code>config/application.rb</code> dirrectement après la définition de la class.</p>
+      <p><b class="red3">Application</b>: Ajouter une ligne au fichier <code>config/application.rb</code> directement après la définition de la classe.</p>
       <pre class="prettyprint" data-lang="ruby">
 application "config.asset_host = 'http://example.com'"
 
@@ -202,7 +222,7 @@ application do
   "config.asset_host = 'http://example.com'"
 end
       </pre>
-      <p><b class="red3">Git</b>: Executer une commande git</p>
+      <p><b class="red3">Git</b>: Executer des commandes <code>git</code></p>
       <pre class="prettyprint" data-lang="ruby">
 git :init
 git :add => "."
@@ -220,8 +240,8 @@ git :add => "foo.rb", :rm => "foo.rb.bak"
     </hgroup>
     <article class="smaller">
       
-      <p><b class="red3">Vendor</b>: Crée un fichier dans le repertoire <code>vendor/</code> et insère le code spécifié en second paramètre ou dans le bloc.</p>
-      <p>Similaire pour la méthode <code>lib(...)</code> </p>
+      <p><b class="red3">Vendor</b>: Créer un fichier dans le repertoire <code>vendor/</code> et insèrer le code spécifié en second paramètre ou dans le bloc.</p>
+      <p>Similaire à la méthode <code>lib(...)</code> </p>
       <pre class="prettyprint" data-lang="ruby">
 vendor("sekrit.rb", '#top secret stuff')
 
@@ -233,7 +253,7 @@ end
       </pre>
 
 
-      <p><b class="red3">Generate</b>: Exécute le generateur rails en passant son <code>nom</code> et les <code>options</code></p>
+      <p><b class="red3">Generate</b>: Exécuter les generateurs rails (<code>nom</code>, <code>options</code>)</p>
       <pre class="prettyprint" data-lang="ruby">
 generate("scaffold", "forums title:string description:text")      </pre>
 
@@ -247,7 +267,7 @@ generate("scaffold", "forums title:string description:text")      </pre>
     </hgroup>
     <article class="smaller">
       
-      <p><b class="red3">rakefile</b>: Crée un fichier <code>.rake</code> dans le repertoire <code>lib/tasks/</code> et insère le code spécifié en second paramètre ou dans le bloc.</p>
+      <p><b class="red3">rakefile</b>: Créer un fichier <code>.rake</code> dans le repertoire <code>lib/tasks/</code> et insèrer le code spécifié en second paramètre ou dans le bloc.</p>
       <pre class="prettyprint" data-lang="ruby">
 rakefile("test.rake", 'hello there')
 
@@ -263,7 +283,7 @@ end
       </pre>
 
 
-      <p><b class="red3">rake</b>: Exécute une tâche Rake</p>
+      <p><b class="red3">rake</b>: Exécuter une tâche Rake</p>
       <pre class="prettyprint" data-lang="ruby">
 rake("db:migrate", :env => "...", :sudo => false )</pre>
 
@@ -279,7 +299,7 @@ rake("db:migrate", :env => "...", :sudo => false )</pre>
       
       <p>Et plus encore …</p>
       <b>
-      <ul class="" style="line-height:25px !important">
+      <ul class="" style="line-height:25px !important;">
         <li>add_source</li>
         <li>capify!</li>
         <li>environment </li>
@@ -301,7 +321,7 @@ rake("db:migrate", :env => "...", :sudo => false )</pre>
       <h3>Pour aller plus loin</h3>
     </hgroup>
     <article>
-      <p>Créé des templates avancés grâce à <b class="red3">Thor</b> <a href="https://github.com/wycats/thor">(https://github.com/wycats/thor)</a></p>
+      <p>Créer des templates avancés grâce à <b class="red3">Thor</b> <a href="https://github.com/wycats/thor">(https://github.com/wycats/thor)</a></p>
 <pre class="prettyprint" data-lang="ruby">
 
 # Source: https://github.com/rails/rails/blob/d246da1603a9833532a5eebb3836be25a87dfaa6/
@@ -350,12 +370,6 @@ module Rails
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
     </p>
-  </slide>
-
-  <slide class="logoslide dark nobackground">
-    <article class="flexbox vcenter">
-      <span><img src="images/fd_logo.png"></span>
-    </article>
   </slide>
 
   <slide class="backdrop"></slide>

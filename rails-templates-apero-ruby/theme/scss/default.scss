@@ -367,7 +367,7 @@ ul {
   }
 
   > li:before {
-    content: '·';
+    content: '*';
     margin-left: -1em;
     position: absolute;
     font-weight: 600;

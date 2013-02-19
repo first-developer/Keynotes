@@ -1,8 +1,8 @@
 3.2.5 (Media Mark)
-8cc7c8aa2b4d450fa261e7fb6545dc738254942f
+7a10cef9acf2b3df4d7d92500bf408f0f21a1b38
 o:Sass::Tree::RootNode
 :
-@linei:@template"áR@import "base";
+@linei:@template"àR@import "base";
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
@@ -371,7 +371,7 @@ ul {
   }
 
   > li:before {
-    content: 'Â·';
+    content: '*';
     margin-left: -1em;
     position: absolute;
     font-weight: 600;
@@ -1582,7 +1582,7 @@ color;&;';i[;	@;(i ;
 ;4@
 ;["before;;B;iq;A0;iq;T;	@;(i ;
 [	o;%;["content;&;';ir;	@;(i ;
-[ ;o;;;/;	@;"	'Â·'o;%;["margin-left;&;';is;	@;(i ;
+[ ;o;;;/;	@;"'*'o;%;["margin-left;&;';is;	@;(i ;
 [ ;o;;;/;	@;"	-1emo;%;["position;&;';it;	@;(i ;
 [ ;o;;;/;	@;"absoluteo;%;["font-weight;&;';iu;	@;(i ;
 [ ;o;;;/;	@;"600o;0;1["ul;2o;3;4" ;ix;5[o;6;5[o;7
