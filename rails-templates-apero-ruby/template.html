@@ -33,65 +33,81 @@ URL: https://code.google.com/p/io-2012-slides
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
+      
     </hgroup>
+    <div class="flexbox vright auto-fadein">
+        <img src="images/rails.jpeg"></div>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+      <h2>Qui suis-je?</h2>
+      <h3></h3>
     </hgroup>
     <article>
-      <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
-          </ul>
-        </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
-      </ul>
+      <br/>
+      <hgroup>
+        <h3><b>Lionel LONKAP TSAMBA</b></h3>
+        <h5 class="red3">Android & Rails Freelance developer</h5>
+      </hgroup>
+      <br/>
+      <br/>
+      <p class="detail"><span class="icon"><img src="images/twitter_hover.png"></span><span class="info">@First_developer</span></p> 
+      <p class="detail"><span class="icon"><img src="images/gplus_hover.png"></span><span class="info">+lionel Lioninho </span></p> 
+      <p class="detail"><span class="icon"><img src="images/github_hover.png"></span><span class="info">https://github.com/first-developer</span></p> 
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Plan</h2>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
+      <ul class="build vSpace">
+        <li>Les templates dans Rails</li>
+        <li>Exemple de template</li>
+        <li>Utilisation de templates</li>
+        <li>Création de templates</li>
+        <ul>
+          <li>Méthodes de génération</li>
+          <li>Pour aller plus loin (Thor)</li>
+        </ul>
+        <li>Projet Open Sources</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
+      <h2>Les templates dans Rails</h2>
     </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
-      </ul>
+    <article class="flexbox vcenter auto-fadein smaller">
+      <q>
+        <span class="red3">Templates</span> are a king of <span class="fade red3">generator</span> used to generate custom application
+      </q>
     </article>
   </slide>
 
-  <slide hidden>
-    Hidden slides are left out of the presentation.
+  <slide>
+    <hgroup>
+      <h2>Exemple de Template</h2>
+      <h3>./template.rb</h3>
+    </hgroup>
+    <article>
+      <p>Exemple de template fournir dans la <a href="http://guides.rubyonrails.org/generators.html#application-templates">doc</a> rails</p>
+      <pre class="prettyprint" data-lang="ruby">
+gem("rspec-rails", :group => "test")
+gem("cucumber-rails", :group => "test")
+ 
+if yes?("Would you like to install Devise?")
+  gem("devise")
+  generate("devise:install")
+  model_name = ask("What would you like the user model to be called? [user]")
+  model_name = "user" if model_name.blank?
+  generate("devise", model_name)
+end
+</pre>
+    </article>
   </slide>
 
   <slide>

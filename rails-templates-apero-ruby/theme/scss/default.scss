@@ -50,7 +50,18 @@ $article-content-top-padding: 45px;
   background-color: white;
 }
 
-
+.detail {
+  text-align: left;
+  vertical-align: center;
+  .icon {
+    margin: 0 20px 0 0;
+  }
+  .info {
+    top: -12px;
+    position: relative;
+  }
+  margin-top: 18px;
+}
 
 /**
  * Theme Styles
@@ -328,6 +339,14 @@ h3 {
   color: $gray-3;
 }
 
+h5 {
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 2;
+  font-weight: inherit;
+  color: $gray-2;
+}
+
 ul {
   margin-left: 1.2em;
   margin-bottom: 1em;
@@ -584,8 +603,9 @@ article.smaller {
     letter-spacing: 0;
   }
   q {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 48px;
+    
 
     &:before, &:after {
       font-size: 60px;
@@ -756,6 +776,13 @@ article.smaller {
     @include transform(translateY(0));
     pointer-events: auto; // Allow people to do things like open links embedded in the speaker notes.
   }
+}
+
+.vSpace{
+  li {
+      line-height:40px;    
+  }
+
 }
 
 .source {
